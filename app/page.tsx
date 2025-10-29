@@ -6,9 +6,15 @@ import ComponentB from './components/b';
 import ComponentC from './components/c';
 import ComponentD from './components/d';
 import ComponentE from './components/e';
+import { Metadata } from 'next';
 
 const COMPONENTS = [ComponentA, ComponentB, ComponentC, ComponentD, ComponentE];
 const INTERVAL_TIME = 5_000; // 5 seconds
+
+export const metadata: Metadata = {
+  title: 'Para Male',
+  description: '...',
+}
 
 export default function Home() {
   const [currentIndex, setCurrentIndex] = useState(0);
